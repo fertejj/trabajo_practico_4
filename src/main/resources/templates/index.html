@@ -12,42 +12,9 @@
 		crossorigin="anonymous"></script>
 	<title>Título de la página</title>
 </head>
-
+<div th:insert="~{/layouts/header :: header}"></div>
 <body class="bg-light">
-
-	<header>
-		<img class="item-center d-block mx-auto" src="../static/img/fi-logo.png" alt="Logotipo de la facultad">
-		<h1 class="text-center">Facultad de Ingenieria</h1>
-		<h4 class="text-center">Educacion publica y de calidad</h4>
-	</header>
-	<nav class="navbar navbar-expand-lg bg-primary-subtle mb-2">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Menu</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Inicio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://www.fi.unju.edu.ar/institucional/historia.html">Acerca de</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://www.fi.unju.edu.ar/noticias/historial.html">Noticias</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Carreras</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contacto</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+	<header ></header>
 	<main>
 		<section class="container">
 			<div class="row">
@@ -75,18 +42,18 @@
 						<h5>Noticias recientes:</h5>
 						<div class=primary"mb-4">
 							<a href="https://www.fi.unju.edu.ar/turno-ordinario-de-examenes"><img class="img-fluid"
-									src="../static/img/2do-turno-24.jpg"></a>
+									src="img/2do-turno-24.jpg"></a>
 						</div>
 						<div class="row">
 							<div class="col">
 								<a
 									href="https://www.fi.unju.edu.ar/codinoa/4588-75-reunion-plenaria-y-asamblea-del-confedi-fiunju.html">
-									<img class="img-fluid" src="../static/img/confedi-fiunju.jpg"></a>
+									<img class="img-fluid" src="img/confedi-fiunju.jpg"></a>
 							</div>
 							<div class="col">
 								<a
 									href="https://www.fi.unju.edu.ar/actas-acuerdos-convenios/4586-encuentro-entre-la-facultad-de-ingenieria-y-la-municipalidad-de-palma-sola-para-la-renovacion-de-convenios.html">
-									<img class="img-fluid " src="../static/img/renovacion-convenios-palma-sola.jpg"></a>
+									<img class="img-fluid " src="img/renovacion-convenios-palma-sola.jpg"></a>
 							</div>
 						</div>
 					</div>
@@ -102,7 +69,7 @@
 			</div>
 		</section>
 	</main>
-	<footer> © pie de la página </footer>
+<div th:insert="~{/layouts/footer :: footer}"></div>
 </body>
 
 </html>
